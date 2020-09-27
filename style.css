@@ -1,0 +1,126 @@
+html{
+     height: 100%; /*Fixes the gradient problem if any */
+}
+
+
+
+body{
+background-image:linear-gradient(#fc5e55 , #fa4083);
+background-repeat: no-repeat;
+color: white;
+font-family: 'Roboto', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+nav{
+   
+    width: 40%;
+    display: flex;
+    justify-content:space-between;
+}
+
+main{
+    
+    min-height: 300px;
+    display: flex;
+}
+h1{
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:1rem;
+}
+p{
+    line-height:1.75rem;
+    margin-bottom: 0.5rem;
+}
+.herobox1{
+    
+    flex:2;
+    padding-right: 100px;
+    }
+    .herobox2{
+    
+    flex:1;
+    }
+.cards{
+   
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Playfair' , serif;
+    margin-top: 20px;
+}
+.cards p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 10px 30px 20px 30px;
+}
+
+.card1{
+    background-image:url('imgs/image-background-card1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    padding-top: 20px;
+}
+
+
+.card2{
+    background-image:url('imgs/image-background-card2.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 230px;
+    padding-top: 20px;
+    width: 30%;
+    
+}
+.card3{
+    background-image:url('imgs/image-background-card3.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+    padding-top: 20px;
+}
+.card1, .card2, .card3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow:5px 5px 5px black;
+}
+.cards a{
+    color: white;
+    text-decoration:none;
+}
+.mybutton{
+    background-color: white;
+    color: #fa4083;
+    font-family: 'Playfair';
+    padding: 15px 25px;
+    border-radius: 0px 1000px;
+    box-shadow: 5px 5px 5px black;
+}
+a.mybutton{
+    display: inline-block;
+    margin: 20px;
+}
