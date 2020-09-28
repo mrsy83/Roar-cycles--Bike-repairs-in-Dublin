@@ -1,6 +1,6 @@
 html{
-     height: 100%; /*Fixes the gradient problem if any */
-}
+     height: ; /*Fixes the gradient problem if any */
+} 
 
 
 
@@ -20,6 +20,7 @@ a{
     min-height: 300px;
     margin-left: auto;
     margin-right: auto;
+   
 }
 header{
     
@@ -28,12 +29,8 @@ header{
    align-items: center;
    padding-top: 20px;
    padding-bottom: 20px;
-}
-nav{
-   
-    width: 40%;
-    display: flex;
-    justify-content:space-between;
+   border-bottom: 1px solid lightgray;
+   margin-bottom: 30px;
 }
 
 main{
@@ -117,10 +114,62 @@ h2{
     color: #fa4083;
     font-family: 'Playfair';
     padding: 15px 25px;
-    border-radius: 0px 1000px;
+    border-radius: 2px solid white;
     box-shadow: 5px 5px 5px black;
+}
+.mybutton:hover{
+    background-color: lightgreen;
+    transition: 1sec;
 }
 a.mybutton{
     display: inline-block;
     margin: 20px;
+}
+.navbutton{
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Playfair' , serif;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:15px;
+    padding-right: 25px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+}
+.testimonials{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tbox{
+    box-sizing:border-box;
+    width: 45%;
+    padding: 50px;
+    border:1px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+}
+ .navbutton:hover .dropdown{
+
+    display: block;
+}
+.dropdown .navbutton {
+    width: 100px;
+    background-color: white;
+    color: brown;
+}
+.dropdown .navbutton a {
+    
+    color: brown;
 }
