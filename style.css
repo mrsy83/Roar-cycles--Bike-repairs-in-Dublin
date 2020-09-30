@@ -1,11 +1,14 @@
 html{
-     height: ; /*Fixes the gradient problem if any */
-} 
-
+    background-image:linear-gradient(#fc5e55 , #fa4083);
+}
 
 
 body{
-background-image:linear-gradient(#fc5e55 , #fa4083);
+background-image:url('imgs/image-lion-background.png');
+background-repeat:no-repeat;
+background-position: top center;
+
+
 background-repeat: no-repeat;
 color: white;
 font-family: 'Roboto', sans-serif;
@@ -38,6 +41,13 @@ main{
     min-height: 300px;
     display: flex;
 }
+.main2{
+    min-height: 300px;
+    padding-top:50px;
+    
+    
+}
+
 h1{
     font-size: 3.25rem;
     font-family: 'Playfair Display', serif;
@@ -171,5 +181,24 @@ a.mybutton{
 }
 .dropdown .navbutton a {
     
+
     color: brown;
+}
+.inputwrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input[type=text] ,input[type=email], textarea {
+    padding: 12px 20px;
+    width: 80%;
+    font-family: 'Roboto';
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+label{
+    display: block;
+    margin-bottom:10px;
+}
+input[type=radio]{
+    margin-right: 10px;
 }
